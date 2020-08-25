@@ -31,10 +31,10 @@ export default {
   name: "App",
   data() {
     return {
-      api_key: "b09acb7c0038f5c921e9d1d23630f47c",
+      api_key: "your_key_token",
       url_base: "https://api.openweathermap.org/data/2.5/",
       query: "",
-      weather: {}
+      weather: {},
     };
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
         fetch(
           `${this.url_base}weather?q=${this.query}&units=imperial&APPID=${this.api_key}`
         )
-          .then(res => {
+          .then((res) => {
             return res.json();
           })
           .then(this.setResults);
@@ -66,7 +66,7 @@ export default {
         "September",
         "October",
         "November",
-        "December"
+        "December",
       ];
       let days = [
         "Sunday",
@@ -75,7 +75,7 @@ export default {
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday"
+        "Saturday",
       ];
 
       let day = days[d.getDay()];
@@ -84,8 +84,8 @@ export default {
       let year = d.getFullYear();
 
       return `${day} ${date} ${month} ${year}`;
-    }
-  }
+    },
+  },
 };
 </script>
 
