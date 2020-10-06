@@ -1,6 +1,6 @@
 # vue_weather
 
-The goal of the mini project is to work with Open Weather API to create a real time mini weather app. The purpose of this app is to familar with VUE framework and learn how to use vue.js.
+The goal of the project is to work with Open Weather API to create a real time mini weather app. The purpose of this app is to familar with VUE framework and learn how to use vue.js.
 
 ## Project setup
 
